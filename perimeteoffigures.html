@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Hello</p>
+<script>
+
+	function input(){
+		while(true){
+			let p=prompt("vedite parol","12300");
+			if(p === '12300'){
+				break;
+			}else if(p==='exit'){
+				alert("виходим из програми");
+				return;
+			}else{
+				alert('неправельний пароль');
+			}
+		}
+
+		perimeter();
+	}
+	function perimeter(){
+		let h = prompt('введите квадрат треугольник', 'треугольник');
+			
+		if (h == 'квадрат') {
+		 	let a = prompt('введите 1 число');
+
+			function getSq(a) {
+				return a * 4;
+			}
+
+			let res1 = getSq(a);
+			alert(res1);
+		} else if (h == 'треугольник') {
+		    let s = +prompt('введите 1 число');
+			let o = +prompt('введите 2 число');
+			let z = +prompt('введите 3 число');
+
+			function getTriangle(a, b, c) {
+				return (a + b + c);
+			}
+
+			let res1 = getTriangle(s, o, z);
+			alert(res1);
+	    } else {
+			alert('error')
+	    }
+    }
+
+     while (true){
+     	input();
+     	let arr=prompt('prodolzit programu','no/yes');
+     	if(arr === 'no'){
+     		break;
+     	}
+     }
+
+   alert('cпасибо за посещение программи');
+</script>
+
+
+
+
+
+
+</body>
+</html>
